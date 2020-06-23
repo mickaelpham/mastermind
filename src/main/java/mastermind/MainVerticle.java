@@ -10,10 +10,7 @@ public class MainVerticle extends AbstractVerticle {
   @Override
   public void start(Promise<Void> startPromise) {
     var server = vertx.createHttpServer();
-
-    server.requestHandler(request -> {
-      request.response().end("Hello, World!");
-    });
+    server.requestHandler(request -> request.response().end("Hello, World!"));
 
     server.listen(8888, ar -> {
       if (ar.succeeded()) {
