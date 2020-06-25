@@ -16,6 +16,8 @@ def vertxVersion = '3.9.1'
 dependencies {
     implementation 'ch.qos.logback:logback-classic:1.2.3'
     implementation "io.vertx:vertx-core:$vertxVersion"
+    implementation "io.vertx:vertx-lang-ruby:$vertxVersion"
+    implementation "io.vertx:vertx-web:$vertxVersion"
     testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
 }
